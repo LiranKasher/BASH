@@ -1,7 +1,7 @@
 #!/bin/bash
 # This script deletes SFTP users on demand.
 # It removes the users, their home, mail and data directories.
-# It also removes login permissions from the SSHD config file, thus keeping it slim and neat.  
+# It also removes login permissions from the SSH config file, thus keeping it slim and neat.  
 
 if [ $(id -u) -eq 0 ]; then
         read -p "Warning! This is a permanent change and cannot be undone!
